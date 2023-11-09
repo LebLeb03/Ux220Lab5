@@ -5,16 +5,16 @@ class LebElement extends HTMLElement{
 
 }
 
-customElement.define("x-Leb", LebElement);
+customElements.define("x-Leb", LebElement);
 
 
 class CenterElement extends HTMLElement{
        connectedCallback(){
-           this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>`;
+           this.innerHTML = `<div style="text-align: center">${this.innerHTML}</div>`;
        }
 }
 
-customElement.define("x-center", CenterElement);
+customElements.define("x-center", CenterElement);
 
 class YearElement extends HTMLElement{
        connectedCallback(){
@@ -23,4 +23,4 @@ class YearElement extends HTMLElement{
 
 }
 
-customElement.define("x-fullyear", YearElement);
+customElements.define("x-fullyear", YearElement);
