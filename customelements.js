@@ -3,17 +3,9 @@ class LebElement extends HTMLElement{
            this.innerHTML = "Caleb Was Here";
        }
 
-
 }
 
-
 customElement.define("x-Leb", LebElement);
-
-
-
-
-
-
 
 
 class CenterElement extends HTMLElement{
@@ -22,19 +14,13 @@ class CenterElement extends HTMLElement{
        }
 }
 
-
 customElement.define("x-center", CenterElement);
-
-
-
 
 class YearElement extends HTMLElement{
        connectedCallback(){
            this.innerHTML = new Date().getFullYear();
        }
 
-
 }
-
 
 customElement.define("x-fullyear", YearElement);
