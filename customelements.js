@@ -5,7 +5,7 @@ class LebElement extends HTMLElement{
 
 }
 
-customElements.define("x-Leb", LebElement);
+customElements.define("x-leb", LebElement);
 
 
 class CenterElement extends HTMLElement{
