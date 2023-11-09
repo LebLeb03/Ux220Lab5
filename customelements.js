@@ -24,3 +24,13 @@ class YearElement extends HTMLElement{
 }
 
 customElements.define("x-fullyear", YearElement);
+
+
+class LabElement extends HTMLElement{
+       connectedCallback(){
+           this.innerHTML = `<div style = "text-shadow: blue 2px 2px">${this.inner.HTML}</div>`;
+       }
+
+}
+
+customElements.define("x-lab5", LabElement);
