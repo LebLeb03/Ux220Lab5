@@ -11,9 +11,8 @@ customElement.define("x-Leb, LebElement");
 
 
 class CenterElement extends HTMLElement{
-        connectedCallback (){
-            this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>
-            `;
+        connectedCallback(){
+            this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>`;
         }
 
 }
