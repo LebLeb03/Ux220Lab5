@@ -5,7 +5,7 @@ class LebElement extends HTMLElement{
 
 }
 
-customElement.define("x-Leb, LebElement");
+customElement.define("x-Leb", "LebElement");
 
 
 
@@ -17,14 +17,14 @@ class CenterElement extends HTMLElement{
 
 }
 
-customElement.define("x-center, CenterElement");
+customElement.define("x-center", "CenterElement");
 
 
 class YearElement extends HTMLElement{
         connectedCallback(){
-            this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>`;
+            this.innerHTML = new Date ().getFullYear();
         }
 
 }
 
-customElement.define("x-full year, YearElement");
+customElement.define("x-full year", "YearElement");
