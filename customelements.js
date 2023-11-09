@@ -18,3 +18,13 @@ class CenterElement extends HTMLElement{
 }
 
 customElement.define("x-center, CenterElement");
+
+
+class YearElement extends HTMLElement{
+        connectedCallback(){
+            this.innerHTML = `<div style="text-align:center">${this.innerHTML}</div>`;
+        }
+
+}
+
+customElement.define("x-full year, YearElement");
